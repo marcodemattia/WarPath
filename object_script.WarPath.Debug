@@ -1,0 +1,17 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\datamodel.o
+./debug\data.o
+./debug\checkbox.o
+./debug\spinboxdelegate.o
+./debug\spinbox.o
+./debug\optionsdatamodel.o
+./debug\moc_mainwindow.o
+./debug\moc_checkbox.o
+./debug\moc_button.o
+./debug\moc_datamodel.o
+./debug\moc_spinboxdelegate.o
+./debug\moc_spinbox.o
+./debug\moc_optionsdatamodel.o
+);

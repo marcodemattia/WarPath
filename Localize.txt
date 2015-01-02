@@ -1,0 +1,8 @@
+# The following lines can be modified to change the corresponding words inside WarPath.
+# The first two are the titles of the windows on the left.
+# The third one is what appears near the box with the total.
+# The last one is what appears in the possible text in the fifth field in the unit description (it appears in saved lists after all the options).
+Item Selection
+Selected Items
+Total
+Special:

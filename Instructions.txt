@@ -1,0 +1,55 @@
+To launch the program: double click on WarPath.exe file.
+
+The window is divided in 4 areas.
+In the upper left part is the complete list from which to select. Units are selected with a double click of the left mouse button
+and they are inserted in the selection list.
+Above the complete list is the combo-box from which to choose the list.
+Down left is the window with selected units. TO REMOVE A UNIT: SELECT IT AND PRESS "del" (the key below "ins").
+Down right is the options window. Options are divided in different tabs (explained later on).
+The options shown are always those of the selected unit.
+The upper right window contains eventual options with suboptions.
+
+To save the list go to File->Save.
+
+HOW TO ADD NEW LISTS:
+Available lists are read on startup from the "FileList.txt" file, in the same directory of the executable. This file contains the names
+of the datafiles which are in the "data" dir.
+If you create a new datafile you must add it to FileList.txt to use it in WarPath.
+The datafiles can be put in different groupd, for example:
+Type1
+/data/list1.txt
+/data/list2.txt
+Type2
+/data/list3.txt
+
+What follows are the instructions on the list format. It is probably sufficient to open the example datafiles in the data dir to see how
+it works.
+
+The datafiles have some rules to follow:
+The units are specified in the format
+- name ; models number; points cost; type
+- name is the unit. It will be shown in the first column.
+- models number accepts the following formats: min-max (two numbers divided by the "-"), N+ (for example 10+) or N (in the case of a fixed number).
+- type specifies the unit type, for example troops, etc... It will be shown near to the lines.
+The separator is ";".
+For the options the structure is the same, but the line begins with "-", for example:
+- name ; number ; points ; type
+The type can be left empty and in this case the default type is "Options". You can add a fifth field with text "xModel" (without the ") for
+options you pay for each model in the unit.
+
+For options shared between units:
+The line begins with the symbol "@" followed by the list (always divided by @) of the name of the units to which it is associated.
+The list is then followed by the symbol ":" and then by the normal option text (without the initial "-", replaced in this case by the :).
+The default type for this kind of options (if you do not specify the fourth field) is "Special Options".
+
+Starting from version 0.91 it is possible to add a fifth field to units. The text inserted in this fifth field is written in the list saved
+after all selected options and preceded by the text "Special:". An example is in the testFantasy datafile.
+From this version it is also possible to modify the titles of the two windows ("Item Selection" and "Selected Item"), the name "Total" near
+the total number and the word "Special:" explained above. To do that it is possible to change them in the Localize.txt file in the main dir.
+
+Starting from version 0.92 it is possible to have more than an option with subOptions for the same item and they can be shown with the "Show"
+button that will appear near them.
+
+Starting from version 0.93 it is possible to set a background image. A different image for each list can be specified in FileLists.txt, as well
+as a default image. It is also possible to specify the transparency of the windows. See FileLists.txt for more detailed instructions.
+The image is repeated when it is smaller than the window. For this reason it would be good to use big images, such as wallpapers.

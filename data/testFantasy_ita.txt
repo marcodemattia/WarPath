@@ -1,0 +1,33 @@
+# Le righe che iniziano con # sono commenti e vengono ignorate.
+# Il formato e': Nome dell'unita, numero di modelli (N, N+, N-M sono tutti formati accettati),
+# costo in punti, tipo.
+Generale   ; 1; 120; Eroi
+# Le opzioni seguono la stessa struttura delle unita.
+- Spada            ; 1; 6 ; Armi
+- Scudo            ; 1; 5 ; Armi
+- Cavallo          ; 1; 12; Cavalcature
+
+Comandante ; 1; 80; Eroi
+- Spada            ; 1; 5 ; Armi
+- Scudo            ; 1; 4 ; Armi
+- Cavallo          ; 1; 10; Cavalcature
+
+# Questa unita' ha una opzine che va pagata per ciascun modello, indicato dal quinto campo "xModel".
+Guardie del generale ; 10-20; 10; Truppe
+- Lance            ; 1; 1; Armi; xModel
+
+Contadini ; 10+ ; 4; Truppe
+- Forconi          ; 1; 0; Armi; xModel
+- Fionde           ; 1; 1; Armi; xModel
+
+# Questa e' una opzione condivisa dal Generale e dal Comandante. Anziche' scriverla due volte la
+# assegnamo alle due unita'. Le altre opzioni, come Spada, sono state inserite direttamente perche'
+# hanno un costo diverso per le due unita.
+@ Comandante @ Generale : Drago ; 1; 100; Cavalcature
+
+# Dalla versione 0.91 e' possibile aggiungere del testo come quinto campo dell'unita'. Questo testo comparir?
+# nella lista salvata dopo le eventuali opzioni selezionate. Ad esempio:
+Guerrieri; 10; 4; Truppa; Furiosi
+- Scudo            ; 1; 1; Armi; xModel
+# In questo caso il quinto campo e' "Furiosi" e apparira' scritto come "Special: Furiosi". La parola "Special:"
+# puo' essere modificata nel file Localize.txt.

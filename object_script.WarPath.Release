@@ -1,0 +1,17 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\datamodel.o
+./release\data.o
+./release\checkbox.o
+./release\spinboxdelegate.o
+./release\spinbox.o
+./release\optionsdatamodel.o
+./release\moc_mainwindow.o
+./release\moc_checkbox.o
+./release\moc_button.o
+./release\moc_datamodel.o
+./release\moc_spinboxdelegate.o
+./release\moc_spinbox.o
+./release\moc_optionsdatamodel.o
+);
